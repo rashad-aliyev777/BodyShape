@@ -1,0 +1,442 @@
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
+
+:root {
+    --qara-reng: #000;
+    --ag-reng:#fff;
+    --boz-reng:#aaa;
+    --narinci:#FF921B;
+}
+body {
+    font-family: 'Gabarito', cursive;
+}
+/* header start */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--qara-reng);
+}
+.bodyshape_sol {
+    padding: 7px 30px;
+}
+.bodyshape_sol p {
+    color: var(--narinci);
+    margin-top: 5px;
+}
+.bodyshape_sag {
+    padding-right: 30px;
+}
+.bodyshape_sag a {
+    color: var(--ag-reng);
+    font-size: 16px;
+    font-weight: 400;
+    transition: all 0.5s ease;
+    margin: 15px;
+}
+.bodyshape_sag a:hover {
+    color: var(--narinci);
+}
+
+.bodyshape_sag button {
+    background: linear-gradient(90deg, #F66844 0%, #FF921B 100%);
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    cursor: pointer;
+    color: var(--ag-reng);
+}
+/* header end */
+
+
+/* section 1 start */
+
+.gym_bir {
+    background-image: url(../images/section1/pngtree-large-room-full-of-equipment-in-a-gym-picture-image_2611111.jpg);
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.gym_bir_top {
+    width: 531px;
+    height: 223px;
+    flex-shrink: 0;
+    background: linear-gradient(180deg, rgba(57, 57, 57, 0.25) 0%, rgba(57, 57, 57, 0.00) 100%);
+    backdrop-filter: blur(2px);
+    align-items: center;
+    text-align: center;
+    padding-top: 30px;
+}
+.gym_bir_top h3 {
+    color: var(--ag-reng);
+    font-size: 60px;
+    font-weight: 600;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.gym_bir_top p {
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 25px;
+}
+.gym_bir_orta {
+    padding-left: 50px;
+}
+.gym_bir_orta button {
+    margin: 15px;
+}
+.gym_bir_orta .ikinci_button {
+    background: linear-gradient(90deg, #F66844 0%, #FF921B 100%);
+    border: none;
+    cursor: pointer;
+    color: var(--ag-reng);
+    font-size: 14px;
+    padding: 20px;
+}
+.gym_bir_orta .ayri_button {
+    border: 1px solid #F66844;
+    color: var(--ag-reng);
+    font-size: 14px;
+    font-weight: 400;
+    background-color: transparent;
+    padding: 19px;
+    cursor: pointer;
+}
+
+.gym_bir_bottom {
+    position: relative;
+}
+.iconlar {
+    position: absolute;
+    bottom: 22px;
+    left: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 10%;
+}
+.gym_bir_bottom i {
+    color: var(--ag-reng);
+    font-size: 25px;
+    padding-left: 15px;
+    cursor: pointer;
+}
+.fa-google {
+    transition: all 0.5s ease;
+}
+.fa-google:hover {
+    color:  #4285F4;
+    transform: scale(1.3);
+}
+.fa-facebook-f {
+    transition: all 0.5s ease;
+}
+.fa-facebook-f:hover {
+    color: #3b5998;
+    transform: scale(1.3);
+}
+.fa-youtube {
+    transition: all 0.5s ease;
+}
+.fa-youtube:hover{
+    color:#ff0000 ;
+    transform: scale(1.3);
+}
+/* section 1 end */
+
+
+
+/* section 2 start */
+    .gym_iki {
+        background-image: url(../images/section2/24092-doma-dekoracia-chovek-muskulna-nazad-02-svila-tkaenini-poster-pechatee-sh42.jpg);
+        height: 120vh;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        z-index: 1;
+    }
+    .gym_iki::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* RGBA arka plan rengi */
+        z-index: -1; /* İçeriklərə görə arxa planda olacaq */
+    }
+    
+    .gym_iki h4 {
+        color: var(--narinci);
+        font-size: 50px;
+        font-weight: 600;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+    .gym_obsi_divler {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .gym_bir_sira_bir {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        max-width: 360px;
+        background: linear-gradient(0deg, rgba(57, 57, 57, 0.25) 0%, rgba(57, 57, 57, 0.00) 100%);
+        height: 50vh;
+        border-radius: 40px;
+        border: 1px solid var(--narinci);
+        transition: all 0.5s ease;
+    }
+    .gym_bir_sira_bir:hover {
+        transform: scale(0.9);
+    }
+    .gym_bir_sira_bir img {
+        width: 60px;
+        height: 60px;
+    }
+    .gym_bir_sira_bir h6 {
+        color: var(--ag-reng);
+        font-size: 17px;
+        font-weight: 600;
+        margin: 16px 0 35px;
+    }
+    .gym_bir_sira_bir p {
+        color: var(--boz-reng);
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 25px;
+        padding: 0 10px;
+    }
+
+    .gym_obsi_asagi {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .gym_obsi_asaqi_uc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        max-width: 360px;
+        background: linear-gradient(0deg, rgba(57, 57, 57, 0.25) 0%, rgba(57, 57, 57, 0.00) 100%);
+        height: 50vh;
+        border-radius: 40px;
+        border: 1px solid var(--narinci);
+        transition: all 0.5s ease;
+    }
+    .gym_obsi_asaqi_uc:hover {
+        transform: scale(0.9);
+    }
+    .gym_obsi_asaqi_uc h6 {
+        color: var(--ag-reng);
+        font-size: 17px;
+        font-weight: 600;
+        margin: 16px 0 35px;
+    }
+    .gym_obsi_asaqi_uc p {
+        color: var(--boz-reng);
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 25px;
+        padding: 0 10px;
+    }
+/* section 2 end */
+
+
+
+/* section 3 start */
+    .gym_uc {
+        background-color: var(--qara-reng);
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .gym_uc h4 {
+        color: #FF921B;
+        font-size: 45px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .kartlar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+    .kart {
+        background: linear-gradient(180deg, rgba(57, 57, 57, 0.25) 0%, rgba(57, 57, 57, 0.00) 100%);
+        backdrop-filter: blur(2px);
+        width: 278px;
+        height: 342px;
+    }
+    .kart h5 {
+        color: var(--ag-reng);
+        font-size: 24px;
+        font-weight: 600;
+        margin-top: 40px;
+    }
+    .kart p {
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--boz-reng);
+        margin: 25px 0;
+    }
+    .kart h4 {
+        color: var(--ag-reng);
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .kart span {
+        color: var(--boz-reng);
+        font-size: 24px;
+        font-weight: 400;
+    }
+    .kart button {
+        border: 1px solid #FF921B;
+        background-color: transparent;
+        color: var(--ag-reng);
+        padding: 10px;
+        cursor: pointer;
+        transition: all 0.5s ease;
+    }
+    .kart button:hover {
+        box-shadow: 0 0 10px 5px var(--narinci);
+    }
+
+/* section 3 end */
+
+
+/* section 4 start */
+
+    .gym_dord {
+        background-color: var(--qara-reng);
+        text-align: center;
+        
+    }
+    .gym_dord h4 {
+        color: var(--narinci);
+        font-size: 45px;
+        font-weight: 600;
+        padding-bottom: 50px;
+    }
+    .trainer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .trainer img {
+        border-radius: 15px;
+        transition: all 0.5s ease;
+    }
+    .trainer img:hover {
+        transform: scale(0.9);
+        box-shadow: 0 0 20px 5px var(--ag-reng);
+    }
+/* section 4 end */
+
+
+
+/* section 5 start */
+    .gym_bes {
+        background-color: var(--qara-reng);
+        height: 100vh;
+    }
+    .gym_bes h4 {
+        font-size: 40px;
+        font-weight: 600;
+        color: var(--narinci);
+        text-align: center;
+        padding-top: 30px;
+    }
+    .gym_bes_divleri {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 90vh;
+    }
+    .gym_bes_sol ul {
+        list-style: disc;
+    }
+    .gym_bes_sol li {
+        font-size: 30px;
+        font-weight: 600;
+        color: var(--ag-reng);
+        margin: 10px;
+    }
+    .gym_bes_sag img {
+        margin: 30px;
+        border-radius: 20px;
+        transition: all 0.5s ease;
+    }
+    .gym_bes_sag img:hover {
+        transform: scale(0.9);
+        box-shadow: 0 0 20px 5px var(--ag-reng);
+    }
+/* section 5 end */
+
+
+
+/* footer start */
+    .footer {
+        background: #161616;
+        height: 70vh;
+    }
+    
+    .obsii_div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 70vh;
+        padding: 0 50px;
+    }
+    .footer_sol p {
+        color: var(--narinci);
+        margin: 25px 0;
+    }
+    .footer_sol h5 {
+        color: var(--ag-reng);
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .footer_orta {
+        display: flex;
+        justify-content: space-between;
+        width: 40%;
+        text-align: center;
+    }
+    .footer_orta h3 {
+        color: var(--ag-reng);
+        font-size: 20px;
+        font-weight: 600;
+        margin: 15px;
+    }
+    .footer_orta h6 {
+        color: var(--boz-reng);
+        font-size: 16px;
+        padding: 10px;
+    }
+    .footer_sag h3 {
+        color: var(--ag-reng);
+        font-size: 25px;
+        padding-bottom: 20px;
+    }
+    .footer_sag button {
+        background:var(--boz-reng) ;
+        border: none;
+        padding: 15px;
+        border-radius: 15px;
+    }
+/* footer end */
